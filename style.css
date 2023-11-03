@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f4f4;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Fjalla';
+    src: url('FjallaOne-Regular.ttf');
+  }
+
+@font-face {
+    font-family: 'Merri';
+    src: url('MerriweatherSans-VariableFont_wght.ttf');
+  }
+  
+@font-face {
+    font-family: 'Merri-Italic';
+    src: url('MerriweatherSans-Italic-VariableFont_wght.ttf');
+  }
+
+  .logo {
+    width: 90px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Add transparency to the navbar background */
+    margin-bottom: 0;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-family: 'Fjalla';
+    letter-spacing: 1.5px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover{
+    text-decoration: underline;
+    color: rgb(169, 167, 167);
+  }
+
+
+  header {
+    background-image: url('Namaz\ bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    height: 600px;
+  }
+
+  .Namaz-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .Namaz-image h1,
+  .Namaz-image p {
+    font-family: 'Merri', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .Namaz-image button {
+    border-color: white;
+    background-color: transparent;
+    font-family: 'Merri-Italic', sans-serif;
+    transition: none; /* Disable any existing transitions */
+  }
+  
+  .Namaz-image button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: ease-in-out;
+    transition-delay:0s;
+  } 
+
+  /* Hero Section */
+
+  #prayers h2 {
+    text-align: center;
+  }
+  
+  #about p {
+    margin-bottom: 0;
+  }
+  
+  #surahs h2 {
+    text-align: center;
+  }
+  
+  footer {
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-nav {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .navbar {
+      padding: 20px 0;
+    }
+  
+    .navbar .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+  
+    .navbar-brand span {
+      margin-left: 10px;
+    }
+  }
+  
+  .jamat-heading {
+    color: black;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    line-height: 1.3;
+    margin: 5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 800px;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+    text-align: center;
+  }
+  
+  table {
+    width: 80%;
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  
+  th {
+    color: black;
+    padding: 1rem;
+    border: 1px solid black;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  td {
+    color: black;
+    padding: 1rem;
+    border: 1px solid black;
+  }
+  
+  td.active {
+    background-color: black;
+    color: white;
+  }
+
+  td:hover{
+    background-color: black;
+    transition: 0.3 ease-in-out;
+    color: white;
+  }
+  
+  @media (max-width: 576px) {
+    table {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    th,
+    td {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+  
+
+  /* Footer */
+
+ /* Footer Styles */
+ .footer {
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    padding: 40px 0;
+  }
+  
+  .footer h3 {
+    color: #ffffff;
+  }
+  
+  .footer p {
+    color: #ffffff;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer-links li {
+    margin-top: 0.50rem;
+    margin-right: 10px;
+  }
+  
+  .footer-links li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-links li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  .footer-links li a i {
+    margin-right: 5px;
+  }
+  
+  .about{
+    text-align: start;
+  }
+
+  /* Prayers Page */
+
+
+  .wudu-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .section-heading {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 1rem;
+  }
+  
+  .section-description {
+    color: #6c757d;
+    margin-bottom: 3rem;
+  }
+  
+  .wudu-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .wudu-step {
+    width: 80%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step-line {
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 35px;
+  }
+  
+  .wudu-step-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .wudu-step-image {
+    width: 200px; 
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .wudu-step-description {
+    text-align: left;
+  }
+  
+  .wudu-step-heading {
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .wudu-step-text {
+    color: black;
+  }
+
+  .shh{
+    background-color: white;
+  }
+  
+.bjh{
+    background-color: #181819 !important;
+    opacity: 0.9; 
+}
+
+/* Namaz Section */
+
+.namaz-steps {
+  text-align: center;
+}
+
+.namaz-step-card {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.namaz-step-heading {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.namaz-step-line {
+  border-top: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.namaz-step-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.namaz-step-image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.namaz-step-text {
+  color: black;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.jjj {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jjj li {
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.jjj li:last-child {
+  border-bottom: none;
+}
+
+.jjj li:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.jjj li span {
+  color: black;
+  font-weight: bold;
+}
+
+.jjj li span:first-child {
+  margin-right: 10px;
+}
+
+.jjj li span:last-child {
+  color: #888;
+}
+
+/* Surah Page */
+
+.surah-card {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.mmm:hover{
+  background-color: #888 !important;
+}
+
+.surah-card audio{
+  width: 100%;
+}
+
+/* Magic Card Section */
+
+.styling{
+    background: #181818;
+    height: 70vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+#wand {
+  width: 10vmin;
+  aspect-ratio: 1 / 10;
+  background: linear-gradient(
+    to right, 
+    rgb(26 24 28) 10%, 
+    rgb(104, 101, 107) 45% 55%, 
+    rgb(0, 0, 0) 90%
+  );
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  translate: -50%;
+  rotate: -3deg;
+  z-index: 100;
+  border-radius: 3vmin;
+  box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
+  overflow: hidden;
+}
+
+#wand > .cap {
+  height: 20%;
+  width: 100%;
+  background: linear-gradient(
+    to right, 
+    rgb(212 221 236) 10%, 
+    rgb(255 255 255) 45% 55%, 
+    rgb(212 221 236) 90%
+  );
+}
+
+#tiles {
+  display: flex;
+}
+
+.tile {
+  display: grid;
+  place-items: center;
+  width: 38vmin;
+  aspect-ratio: 1;
+  background-color: rgb(31, 41, 55);
+  border-radius: 6vmin;
+  box-shadow: 0vmin 3vmin 6vmin rgb(0 0 0 / 25%),
+    inset 0vmin 0.5vmin 1vmin rgb(255 255 255 / 15%);
+  position: relative;
+  overflow: hidden;
+}
+
+.tile:nth-child(1) {
+  rotate: 3deg;
+  z-index: 3;
+}
+
+.tile:nth-child(2) {
+  rotate: -2deg;
+  z-index: 2;
+}
+
+.tile:nth-child(3) {
+  rotate: 5deg;
+  z-index: 1;
+}
+
+.tile:is(:nth-child(2), :nth-child(3)) {
+  margin-left: -10vmin;
+}
+
+.tile > i {
+  font-size: 15vmin;
+  color: rgb(255 255 255 / 10%);
+}
+
+.tile > img {
+  height: 100%;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+  opacity: var(--opacity);
+  filter: blur(calc(var(--blur) * 10px));
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height of the container if you want the iframe to be vertically centered as well */
+}
+
+.card:hover{
+  transform: scale(1.1);
+  transition: all;
+  transition-duration: 0.3s;
+  transition-delay: 0;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  height: 200px;
+  z-index: -1;
+}
+
+.card{
+  cursor: pointer;
+}
